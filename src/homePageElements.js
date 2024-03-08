@@ -7,11 +7,30 @@ const homePageElements = () => {
   title.textContent = `Welcome to Lit Tapas`;
   const para = document.createElement('p');
   para.textContent = `Our restaurant hosts fun experiences in a bright and modern setting. Do it for the gram! Enjoy trendy decor, mesmerizing art installations along with your duck confit`;
-  //append children
   welcomeText.append(title,para);
+
+  const buyBookLocationBtns = document.createElement('div');
+  buyBookLocationBtns.className = 'BBLButtons';
+  const bookBtn = document.createElement('button');
+  bookBtn.id = 'bookBtn';
+  bookBtn.textContent = 'Book Table';
+  const locationBtn = document.createElement('button');
+  locationBtn.id = 'locationBtn';
+  locationBtn.textContent = 'Location';
+  const merchBtn = document.createElement('button');
+  merchBtn.id = 'merchBtn';
+  merchBtn.textContent = 'Buy Merch';
+  buyBookLocationBtns.append(bookBtn,locationBtn,merchBtn);
+
+  const interiorImageWrapper = document.createElement('div');
+  interiorImageWrapper.id = 'interiorImageWrapper';
+  const interiorImage = document.createElement('div');
+  interiorImageWrapper.append(interiorImage);
 
   return [ //return array of node elements to spread and append
     welcomeText,
+    buyBookLocationBtns,
+    interiorImageWrapper
   ]
 } 
 

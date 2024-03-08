@@ -19,6 +19,19 @@ input, button, textarea, select { font: inherit; }
 body{
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 400;
+  font-size: 16px;
   background-color: var(--bg950);
   color: var(--fg50);
+}
+#interiorImageWrapper{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  div {
+    background-image: url('./assets/restaurantInterior.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 46vw; /*based off width to work like aspect ratio. overshoot a little*/
+  }
 }
