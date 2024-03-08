@@ -7,12 +7,15 @@ import './styles.css'
 //javascript dom elements. these will not be global variables since using modules!
 //select elements
 const bodyElem = document.querySelector('body');
-//make elements
+//make elements with data
 const header = document.createElement('header');
 const nav = document.createElement('nav');
 const homeTabBtn = document.createElement('button');
+homeTabBtn.textContent = `Home`;
 const menuTabBtn = document.createElement('button');
+menuTabBtn.textContent = `Menu`;
 const contactTabBtn = document.createElement('button');
+contactTabBtn.textContent = `Contact`;
 //append elements
 nav.append(homeTabBtn,menuTabBtn,contactTabBtn);
 header.append(nav);
