@@ -5,7 +5,7 @@ const homePageElements = () => {
   const title = document.createElement('h2');
   title.textContent = `Welcome to Lit Tapas`;
   const para = document.createElement('p');
-  para.textContent = `Our restaurant hosts fun experiences in a bright and modern setting. Do it for the gram! Enjoy trendy decor, mesmerizing art installations along with your duck confit`;
+  para.textContent = `Our restaurant hosts fun experiences in a bright and modern setting. Do it for the gram! Enjoy trendy decor, mesmerizing art installations along with your tuna tartare`;
   welcomeText.append(title,para);
 
   const buyBookLocationBtns = document.createElement('div');

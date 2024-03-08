@@ -11,8 +11,10 @@ const bodyElem = document.querySelector('body');
 //make javascript dom elements. these will not be global variables due to use of modules from webpack!
 const header = document.createElement('header');
 const restaurantLogo = document.createElement('div');
-restaurantLogo.id = 'restaurantLogo';//for styling
-restaurantLogo.textContent = 'logo';
+restaurantLogo.id = 'restaurantLogo'; //styling
+const restaurantName = document.createElement('h1');
+restaurantName.id = 'restaurantName'; //styling
+restaurantName.textContent = 'Lit Tapas';
 const nav = document.createElement('nav');
 const homeTabBtn = document.createElement('button');
 homeTabBtn.textContent = `Home`;
@@ -21,7 +23,7 @@ menuTabBtn.textContent = `Menu`;
 const contactTabBtn = document.createElement('button');
 contactTabBtn.textContent = `Contact`;
 nav.append(homeTabBtn,menuTabBtn,contactTabBtn);
-header.append(restaurantLogo,nav);
+header.append(restaurantLogo,restaurantName,nav);
 //tabbed browsing div
 const contentDiv = document.createElement('div');
 
