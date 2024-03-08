@@ -24,5 +24,8 @@ contentDiv.id = 'content';
 nav.append(homeTabBtn,menuTabBtn,contactTabBtn);
 header.append(nav);
 bodyElem.append(header,contentDiv);
-//call homePageElements for array of node elements to spread and append
+
+
+
+//call homePageElements for array of elements to spread and append
 contentDiv.append( ...homePageElements() )
