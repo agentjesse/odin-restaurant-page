@@ -17,7 +17,7 @@ const menuPageElements = () => {
   }
 
   const menuList = document.createElement('ul');
-  menuItems.forEach( item=> {
+  menuItems.forEach( item=> { //add li elements of each dish
     const li = document.createElement('li');
     const dishName = document.createElement('h3');
     dishName.textContent = item.dish;

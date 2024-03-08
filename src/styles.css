@@ -53,3 +53,11 @@ body{
     height: 46vw; /*based off width to work like aspect ratio. overshoot a little*/
   }
 }
+
+/* menu page CSS */
+.menuPageElementsWrapper{
+  ul {
+    list-style-type: none;
+    padding-inline-start: 1.25rem;
+  }
+}
