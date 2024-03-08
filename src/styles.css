@@ -7,6 +7,7 @@ input, button, textarea, select { font: inherit; }
 /* variables---------------------------------------------------------------- */
 /* tailwind CSS Lime palette */
 :root{
+  --black: hsl(0, 0%, 0%);
   --bg950: hsl(13, 81%, 15%);
   --bg900: hsl(15, 75%, 28%);
   --bg800: hsl(15, 79%, 34%);
@@ -32,42 +33,71 @@ body{
     align-items: center;
     background-color: var(--bg950);
     margin: 0 0 1rem 0;
-    padding: 0.5rem 0;
+    padding: 1rem;
+    box-shadow: 0 0 12px var(--bg700);
     #restaurantLogo {
-      width: 2rem;
+      min-width: 2rem;
       height: 2rem;
-      margin: 0.5rem;
+      margin: 0 0.5rem 0 0;
       background-image: url('./assets/fire-symbol.svg');
       background-repeat: no-repeat;
     }
     #restaurantName {
+      text-wrap: nowrap;
+      padding: 0 1rem 0 0;
       margin: 0 auto 0 0;
+      text-shadow: 0 0 5px var(--black), 0 0 5px var(--black);
     }
 
     nav{
       display: flex;
       gap: 1rem;
-      margin: 0 1rem 0 0;
       button {
         color: var(--fg100);
         background-color: var(--bg800);
+        box-shadow: 0 0 3px var(--bg700);
         border-style: none;
         padding: 0.5rem 1rem;
-        border-radius: 6px;
+        border-radius: 13px;
       }
     }
   }
 }
-#interiorImageWrapper{
+
+/* home page CSS */
+.homePageElementsWrapper{
   display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-  div {
-    background-image: url('./assets/restaurantInterior.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .welcomeText{
     width: 80vw;
-    height: 46vw; /*based off width to work like aspect ratio. overshoot a little*/
+    p {
+      margin: 2rem 0;
+    }
+  }
+  .BBLButtons{
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 1.5rem 0;
+    button{
+      background-color: var(--fg200);
+      border-radius: 8px;
+      border-style: none;
+      padding: 0.75rem;
+      color: var(--bg950);
+      box-shadow: 0 0 9px var(--bg950);
+    }
+  }
+  #interiorImageWrapper{
+    div {
+      background-image: url('./assets/restaurantInterior.jpeg');
+      background-size: cover;
+      background-position: center;
+      width: 80vw;
+      height: 45vw; /*based off width to work like aspect ratio. overshoot a little*/
+      box-shadow: 0 0 13px 0px var(--black);
+    }
   }
 }
 
@@ -75,6 +105,29 @@ body{
 .menuPageElementsWrapper{
   ul {
     list-style-type: none;
-    padding-inline-start: 1.25rem;
+    padding-inline-start: 0;
+    padding: 1.25rem;
+    display: grid;
+    grid-template: repeat(4,1fr) 1.5fr / 1fr 1fr;
+    gap: 1rem;
+    li {
+      background-color: var(--bg800);
+      padding: 0.75rem 0.5rem;
+      box-shadow: 0 0 9px var(--bg950);
+    }
+    li:nth-of-type(8) {
+      grid-area: 5/1/6/2;
+    }
+    li:nth-of-type(9) {
+      grid-area: 5/2/6/3;
+    }
+  }
+}
+
+/* contact page CSS */
+.contactInfo {
+  text-align: center;
+  p {
+    margin: 0 0 1rem 0;
   }
 }

@@ -5,8 +5,13 @@ const menuPageElements = () => {
     { dish: 'Foie Gras', desc: 'Pan-seared foie gras served with caramelized onions and brioche.' },
     { dish: 'Coq au Vin', desc: 'Braised chicken cooked in red wine with mushrooms, onions, and bacon.' },
     { dish: 'Beef Wellington', desc: 'Tender beef fillet wrapped in puff pastry with mushroom duxelles.' },
+    { dish: 'Lobster Bisque', desc: 'Creamy soup made with lobster, vegetables, and a hint of brandy.' },
+    { dish: 'Rack of Lamb', desc: 'Herb-crusted rack of lamb served with rosemary jus and roasted vegetables.' },
+    { dish: 'Wild Mushroom Risotto', desc: 'Creamy risotto cooked with a variety of wild mushrooms and Parmesan cheese.' },
+    { dish: 'Chocolate Lava Cake', desc: 'Decadent chocolate cake with a molten chocolate center, served with vanilla ice cream.' },
     { dish: 'Crème Brûlée', desc: 'Classic French dessert consisting of rich custard topped with caramelized sugar.' },
-  ]
+  ];
+
 
   //camelCase fn
   const camelCase = (sentence)=> {

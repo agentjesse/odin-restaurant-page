@@ -5,7 +5,7 @@ const homePageElements = () => {
   const title = document.createElement('h2');
   title.textContent = `Welcome to Lit Tapas`;
   const para = document.createElement('p');
-  para.textContent = `Our restaurant hosts fun experiences in a bright and modern setting. Do it for the gram! Enjoy trendy decor, mesmerizing art installations along with your tuna tartare`;
+  para.textContent = `Our restaurant hosts delightful dining experiences amidst a vibrant and contemporary ambiance. Indulge in our captivating decor while savoring exquisite dishes like our signature tuna tartare. Join us and elevate your culinary journey with every visit.`;
   welcomeText.append(title,para);
 
   const buyBookLocationBtns = document.createElement('div');

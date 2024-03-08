@@ -17,11 +17,11 @@ restaurantName.id = 'restaurantName'; //styling
 restaurantName.textContent = 'Lit Tapas';
 const nav = document.createElement('nav');
 const homeTabBtn = document.createElement('button');
-homeTabBtn.textContent = `Home`;
+homeTabBtn.textContent = `HOME`;
 const menuTabBtn = document.createElement('button');
-menuTabBtn.textContent = `Menu`;
+menuTabBtn.textContent = `MENU`;
 const contactTabBtn = document.createElement('button');
-contactTabBtn.textContent = `Contact`;
+contactTabBtn.textContent = `CONTACT`;
 nav.append(homeTabBtn,menuTabBtn,contactTabBtn);
 header.append(restaurantLogo,restaurantName,nav);
 //tabbed browsing div
