@@ -1,4 +1,3 @@
-// const functionTwo = () => 'STRING RESULT OF FUNCTION TWO';
 const homePageElements = () => {
   //create elements
   const welcomeText = document.createElement('div');
@@ -27,11 +26,11 @@ const homePageElements = () => {
   const interiorImage = document.createElement('div');
   interiorImageWrapper.append(interiorImage);
 
-  return [ //return array of node elements to spread and append
-    welcomeText,
-    buyBookLocationBtns,
-    interiorImageWrapper
-  ]
+  // wrap everything & return wrapped element
+  const elementsWrapper = document.createElement('div');
+  elementsWrapper.className = 'elementsWrapper';
+  elementsWrapper.append(welcomeText, buyBookLocationBtns, interiorImageWrapper)
+  return elementsWrapper
 } 
 
 export { homePageElements };

@@ -2,8 +2,9 @@
 import './styles.css'
 // module imports
 import { homePageElements } from './homePageElements';
+import { menuPageElements } from './menuPageElements';
 
-//javascript dom elements. these will not be global variables since using modules!
+//make javascript dom elements. these will not be global variables due to use of modules from webpack!
 //select
 const bodyElem = document.querySelector('body');
 //make
@@ -26,6 +27,6 @@ header.append(nav);
 bodyElem.append(header,contentDiv);
 
 
-
-//call homePageElements for array of elements to spread and append
-contentDiv.append( ...homePageElements() )
+//call homePageElements to append contents
+contentDiv.append( homePageElements() )
+//contentDiv.append( menuPageElements() )
