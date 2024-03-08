@@ -1,3 +1,4 @@
-#this is a comment
+#this project doesn't need to save dist folder to github for hosting, just docs folder
 *.log
+dist/
 node_modules/

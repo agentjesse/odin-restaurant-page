@@ -9,7 +9,8 @@
     "watch": "webpack --watch --config webpack.prod.js",
     "start": "webpack serve --open --config webpack.dev.js",
     "startQuietly": "webpack serve --config webpack.dev.js",
-    "build": "webpack --progress --config webpack.prod.js"
+    "build": "webpack --progress --config webpack.prod.js",
+    "buildGithubDocs": "webpack --progress --config webpack.githubDocsProd.js"
   },
   "repository": {
     "type": "git",
