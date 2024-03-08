@@ -16,7 +16,9 @@ const menuTabBtn = document.createElement('button');
 menuTabBtn.textContent = `Menu`;
 const contactTabBtn = document.createElement('button');
 contactTabBtn.textContent = `Contact`;
+const contentDiv = document.createElement('div');
+contentDiv.id = 'content';
 //append elements
 nav.append(homeTabBtn,menuTabBtn,contactTabBtn);
 header.append(nav);
-bodyElem.append(header);
+bodyElem.append(header,contentDiv);
