@@ -1,7 +1,7 @@
 const menuPageElements = () => {
   // Create elements
   const menuItems = [
-    { dish:'Tuna Tartate', desc: 'Fresh tuna served with avocado, cucumber, and soy dressing.'},
+    { dish: 'Tuna Tartare', desc: 'Fresh tuna served with avocado, cucumber, and soy dressing.'},
     { dish: 'Foie Gras', desc: 'Pan-seared foie gras served with caramelized onions and brioche.' },
     { dish: 'Coq au Vin', desc: 'Braised chicken cooked in red wine with mushrooms, onions, and bacon.' },
     { dish: 'Beef Wellington', desc: 'Tender beef fillet wrapped in puff pastry with mushroom duxelles.' },
