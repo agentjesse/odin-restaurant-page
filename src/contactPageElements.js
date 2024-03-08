@@ -4,7 +4,7 @@ const contactPageElements = () => {
   contactInfo.className = 'contactInfo';
   
   const address = document.createElement('p');
-  address.textContent = '123 Toronto Street, Suite 100, Toronto, ON M5V 2H1';
+  address.textContent = '123 Toronto Street, Suite 123, Toronto, ON M#K 2H3';
 
   const phoneNumber = document.createElement('p');
   phoneNumber.textContent = 'Phone: (111) 111-1111';
