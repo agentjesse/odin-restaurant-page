@@ -11,13 +11,10 @@ const homePageElements = () => {
   const buyBookLocationBtns = document.createElement('div');
   buyBookLocationBtns.className = 'BBLButtons';
   const bookBtn = document.createElement('button');
-  bookBtn.id = 'bookBtn';
   bookBtn.textContent = 'Book Table';
   const locationBtn = document.createElement('button');
-  locationBtn.id = 'locationBtn';
   locationBtn.textContent = 'Location';
   const merchBtn = document.createElement('button');
-  merchBtn.id = 'merchBtn';
   merchBtn.textContent = 'Buy Merch';
   buyBookLocationBtns.append(bookBtn,locationBtn,merchBtn);
 
@@ -28,7 +25,7 @@ const homePageElements = () => {
 
   // wrap everything & return wrapped element
   const elementsWrapper = document.createElement('div');
-  elementsWrapper.className = 'elementsWrapper';
+  elementsWrapper.className = 'homePageElementsWrapper';
   elementsWrapper.append(welcomeText, buyBookLocationBtns, interiorImageWrapper)
   return elementsWrapper
 } 
