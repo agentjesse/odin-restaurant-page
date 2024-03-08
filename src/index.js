@@ -1,13 +1,12 @@
 // importing CSS directly into the related js file
 import './styles.css'
-
-// module imports, from named and default
-//import { functionOne,functionTwo } from './myModule';
+// module imports
+import { homePageElements } from './homePageElements';
 
 //javascript dom elements. these will not be global variables since using modules!
-//select elements
+//select
 const bodyElem = document.querySelector('body');
-//make elements with data
+//make
 const header = document.createElement('header');
 const nav = document.createElement('nav');
 const homeTabBtn = document.createElement('button');
@@ -25,3 +24,5 @@ contentDiv.id = 'content';
 nav.append(homeTabBtn,menuTabBtn,contactTabBtn);
 header.append(nav);
 bodyElem.append(header,contentDiv);
+//call homePageElements for array of node elements to spread and append
+contentDiv.append( ...homePageElements() )
