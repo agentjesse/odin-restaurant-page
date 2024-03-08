@@ -50,10 +50,10 @@ body{
       margin: 0 auto 0 0;
       text-shadow: 0 0 5px var(--black), 0 0 5px var(--black);
     }
-
     nav{
       display: flex;
       gap: 1rem;
+      overflow: scroll; /*quick fix*/
       button {
         color: var(--fg100);
         background-color: var(--bg800);
