@@ -22,6 +22,9 @@ body{
   font-size: 16px;
   background-color: var(--bg950);
   color: var(--fg50);
+  nav{
+    background-color: var(--bg700);
+  }
 }
 #interiorImageWrapper{
   display: flex;
