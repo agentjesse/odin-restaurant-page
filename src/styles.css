@@ -53,7 +53,7 @@ body{
     nav{
       display: flex;
       gap: 1rem;
-      overflow: scroll; /*quick fix*/
+      overflow: auto; /*quick fix*/
       button {
         color: var(--fg100);
         background-color: var(--bg800);
